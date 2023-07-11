@@ -1,8 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateSearchTerm } from 'redux/filter/slice';
-import { deleteContact } from 'redux/contacts/slice';
-function ContactList() {
+import { deleteContact } from 'redux/contacts/slice';function ContactList() {
   const contacts = useSelector(state => state.contacts.data);
   const searchTerm = useSelector(state => state.filter.searchTerm);
   const dispatch = useDispatch();
