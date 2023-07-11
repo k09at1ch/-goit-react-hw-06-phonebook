@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const contactsSlice = createSlice({
   name: 'contacts',
   initialState: {
-    searchTerm: '',
+
     data: [
       { name: 'Potato', number: 678920, id: '1' },
       { name: 'Sasha', number: 987620, id: '2' },
@@ -31,9 +31,9 @@ const contactsSlice = createSlice({
     deleteContact(state, action) {
       state.data = state.data.filter(({ id }) => id !== action.payload.id);
     },
-    updateSearchTerm(state, action) {
-      state.searchTerm = action.payload;
-    },
+    // updateSearchTerm(state, action) {
+    //   state.searchTerm = action.payload;
+    // },
   },
 });
 

@@ -27,8 +27,7 @@ function ContactForm() {
       return;
     }
 
-    dispatch(addContact(name, number)); // Update this line
-
+    dispatch(addContact(name, number)); 
     setName('');
     setNumber('');
   };
