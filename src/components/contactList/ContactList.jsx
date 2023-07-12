@@ -9,8 +9,9 @@ import { deleteContact } from 'redux/contacts/slice';function ContactList() {
     dispatch(deleteContact({ id: contactId }));
   };
   const filteredContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(searchTerm.toLowerCase())
+    contact.name && contact.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+  
 
   return (
     <div>
