@@ -5,7 +5,7 @@ import { persistStore, persistReducer, FLUSH,
   PURGE,
   REGISTER, } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import contactsReducer from "./contacts/slice";
 import filterReducer from "./filter/slice";
 
